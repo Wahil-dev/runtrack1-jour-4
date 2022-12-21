@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: "Roboto", Georgia, "Times New Roman", serif;
+}
+
+:root {
+    --bg-primary: #336699;
+    --bg-secondary: #FDFDFE;
+    --size-primary: 25px;
+    --color-primary: #336699;
+    --color-secondary: #666666;
+    --bg-btn-primary: #FFCA4B;
+}
+
+/* ----- Start style for All ----- */
+.main-title-section {
+    color: var(--color-primary);
+    width: 100%;
+    text-align: center;
+    font-size: var(--size-primary);
+    padding: 50px 0;
+}
+
+.lien-frm-box {
+    width: 100%;
+    height: auto;
+}
+
+.lien-frm-box a {
+    display: block;
+    background-color: var(--bg-btn-primary);
+    font-weight: 700;
+    width: 100%;
+    height: 100%;
+    padding: 15px 5px;
+    color: white;
+    text-align: center;
+    line-height: 1.6;
+    letter-spacing: 1.5px;
+    font-size: 18px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+/* ----- End style for All ----- */
+
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+.flex-r {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flex-c {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* ------ start header style ------ */
+header .menu {
+    display: none;
+}
+
+header {
+    background-color: white;
+    width: 100%;
+    height: 94px;
+    justify-content: center !important;
+}
+
+header .container {
+    position: relative;
+    height: 100%;
+}
+
+/* --- logo style --- */
+header .logo-box {
+    width: 300px;
+    height: 60%;
+}
+
+header .logo-box img {
+    width: 100%;
+    height: 100%;
+}
+
+/* --- Menu Pc --- */
+header .container .menu {
+
+}
+
+header .container .menu ul {
+
+}
+
+header .container .menu ul a {
+    padding: 10px;
+    color: var(--color-secondary);
+}
+
+
+/* --- Burger menu --- */
+header .container .nav-phone {
+    
+}
+
+header .container .nav-phone .bars {
+    width: 20px;
+    height: 25px;
+    position: relative;
+}
+
+/* ----- Afficher menu ----- */
+header .container .nav-phone:hover .menu-burger {
+    display: flex;
+    animation: zero-to-cent 1s linear infinite;
+    -webkit-animation: zero-to-cent .5s linear forwards;
+}
+@keyframes zero-to-cent {
+    0% {
+        height: 0;
+    } 100% {
+        height: calc(100vh - 94px);
+    }
+}
+
+header .container .nav-phone .bars:hover::after {
+    position: absolute;
+    content: "";
+    top: 0px;
+    right: 0px;
+    width: 120px;
+    height: 80px;
+}
+
+header .container .nav-phone .bars .bar {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 2px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+header .container .nav-phone .menu-burger {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 0;
+    left: 0;
+    top: 100%;
+    border-top: 3px solid #2EA3F2;
+    overflow: hidden;
+}
+
+header .container .nav-phone .menu-burger ul {
+    align-items: flex-start;
+    width: 90%;
+}
+
+header .container .nav-phone .menu-burger li {
+    width: 100%;
+    border-bottom: 1px solid grey;
+}
+
+header .container .nav-phone .menu-burger a {
+    color: #666666;
+    text-transform: uppercase;
+    display: block;
+    font-weight: var(--weight-primary);
+    font-size: var(--font-primary);
+    position: relative;
+    padding: 10px 15px;
+}
+
+header .container .nav-phone .menu-burger a:hover {
+    color: var(--color-blue)
+}
+
+main {
+    height: 100vh;
+    width: 100%;
+}
+/* ---- End Style Header ---- */
+
+
+/* ---- Start Style Hero ---- */
+.hero {
+    width: 100%;
+    justify-content: flex-end;
+    background-color: var(--bg-primary);
+}
+
+.hero .container {
+    align-items: flex-start;
+}
+
+.hero .container .info {
+    width: 50%;
+    align-items: flex-start;
+    margin: auto;
+    color: white;
+    gap: 10px;
+    width: 300px;
+}
+
+.hero .container .info .descr {
+
+}
+
+.hero .container .info .descr p {
+    font-size: 24px;
+    padding: 15px 0;
+}
+
+.hero .container .info .row-2 {
+    padding: 15px 0;
+    text-align: center;
+}
+
+.hero .container .info .row-2 .title {
+    font-size: 25px;
+}
+
+.hero .container .info .row-2 .lien-box {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    background-color: #ff2063;
+    margin: 20px auto 8px;
+}
+
+.hero .container .info .row-2 a {
+    display: block;
+    height: 100%;
+    padding: 10px 15px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.8;
+    letter-spacing: 2px;
+    font-family: Roboto;
+}
+
+.hero .container .info .row-2 .plus-info-box {
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.hero .container .img-box {
+    width: 50%;
+}
+
+.hero .container .img-box img {
+    width: 100%;
+}
+
+/* ---- End Style Hero ---- */
+
+/* ---- Start Formation Section ---- */
+.formations {
+    
+}
+
+.formations .container {
+    margin: auto;
+    background-color: var(--bg-secondary);
+}
+
+.formations .container .formation-box {
+    margin: 20px auto;
+    align-items: flex-start;
+    height: 980px;
+    row-gap: 30px;
+}
+
+.formations .container .formation {
+    box-shadow: 1px 1px 50px 1px rgb(218, 209, 209);
+    background-color: white;
+    height: 100%;
+    width: calc(90% / 3);
+    row-gap: 30px;
+    padding: 40px;
+    justify-content: flex-start;
+}
+
+.formations .container .formation .icon-box {
+    width: 100px;
+    height: 100px;
+}
+
+.formations .container .formation .icon-box img {
+    width: 100%;
+}
+
+.formations .container .formation .info {
+    color: var(--color-primary);
+    font-size: 18px;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.formations .container .formation .info h3 {
+    font-weight: 700;
+}
+
+.formations .container .formation .info .f-title-box {
+    margin-bottom: 10px;
+}
+
+.formations .container .formation .info h4 {
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.formations .container .formation .info h4 span {
+    font-weight: normal;
+}

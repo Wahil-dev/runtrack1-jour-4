@@ -1,0 +1,130 @@
+@media screen and (min-width: 1300px) and (max-width: 3000px) {
+    header .container, .formations .container {
+        width: 1140px !important;
+        min-width: 1140px !important;
+    }
+    /* ---- Afficher le menu pc ---- */
+    header .menu {
+        display: flex;
+    }
+    
+    /* ---- remove burger menu ---- */
+    .nav-phone {
+        display: none;
+    }
+
+    /* --- hero --- */
+    .hero {
+        justify-content: center;
+    }
+    
+    .hero .container .info {
+        width: 500px;
+    }
+
+}
+
+@media screen and (max-width: 1300px) {
+    header .container, .formations .container  {
+        width: 1140px !important;
+        min-width: 1140px !important;
+    }
+
+
+}
+
+@media screen and (max-width: 1200px) {
+    /* --- for all --- */
+    .lien-frm-box a {
+        font-size: 15px;
+    }
+    header .container, .formations .container {
+        width: 960px !important;
+        min-width: 960px !important;
+    }
+
+
+}
+
+@media screen and (max-width: 992px) {
+    /* --- for all --- */
+    .lien-frm-box a {
+        font-size: 20px;
+    }
+
+    header .container, .formations .container {
+        width: 720px !important;
+        min-width: 720px !important;
+    }
+
+    /* --- logo style --- */
+    header .logo-box {
+        width: 250px;
+        height: 50%;
+    }
+
+    /* ---- hero ---- */
+    .hero .container {
+        flex-direction: column;
+    }
+    
+    .hero .container .info {
+        width: 70%;
+    }
+    
+    .hero .container .info .row-2 {
+        width: 100%;
+    }
+
+    .hero .container .info .row-2 .lien-box {
+        width: 472px;
+    }
+
+
+    .hero .container .img-box {
+        width: 100%;
+    }
+
+    /* ---- Formations Style ---- */
+    .formations .container .formation {
+        width: 100%;
+    }
+    
+    .formations .container .formation-box {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header .container, .formations .container {
+        max-width: 576px !important;
+        width: 100% !important;
+        min-width: auto !important;
+        padding: 0 20px;
+    }
+
+    /* ---- Hero ---- */
+    .hero .container .info .row-2 .lien-box {
+        width: 333px;
+    }
+
+    .hero .container .info .row-2 a {
+        font-size: 13px;
+        padding: 10px;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+
+    /* --- logo style --- */
+    header .logo-box {
+        width: 150px;
+        height: 30%;
+    }
+
+    /* ---- hero ---- */
+    .hero .container .info .row-2 .lien-box {
+        width: 100%;
+    }
+}
